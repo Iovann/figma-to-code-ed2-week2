@@ -1,0 +1,172 @@
+@import url('../public/css/chillax.css');
+@import url('../public/css/archivo.css');
+
+body {
+    font-family: Archivo;
+}
+
+.navbar-brand {
+    font-family: Chillax-Medium;
+    color: transparent;
+    -webkit-text-stroke: 1px #1D1D1D;
+}
+
+.fixed {
+    position: fixed;
+    top: 3%;
+    width: 100%;
+    z-index: 1000;
+    justify-content: center;
+}
+
+.main-content {
+    margin-top: 10%;
+}
+
+.other-content {
+    margin-top: 7%;
+}
+
+.classic-custom {
+    font-family: Chillax-Medium;
+    color: transparent !important;
+    -webkit-text-stroke: 3px #ffffff;
+}
+
+.text-custom {
+    font-family: Chillax-Medium;
+    color: #1D1D1D;
+    -webkit-text-stroke: 0.5px #ffffff;
+    text-shadow: 1px 1px 1px #ffffff;
+}
+
+.newsletter::-webkit-input-placeholder {
+    color: white !important;
+}
+
+.text-gray {
+    text-decoration: none !important;
+    color: #C3C3C3;
+}
+
+.hero {
+    background-image: url("/assets/images/hero-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+}
+
+.divider {
+    width: 15% !important;
+}
+
+.font-chillax {
+    font-family: Chillax-Medium !important;
+}
+
+.font-archivo {
+    font-family: Archivo;
+}
+
+.btn-light {
+    background-color: #ffffff;
+}
+
+.start {
+    left: 15% !important;
+}
+
+.validate {
+    height: 60vh !important;
+}
+
+.classic-men {
+    background-image: url("/assets/images/beforefootertwo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+    min-height: 446px;
+}
+
+.buy:hover {
+    background-color: #1D1D1D !important;
+}
+
+.clothes-card:hover .cta-buttons {
+    display: flex !important;
+}
+
+.clothes-card:hover .btn {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.clothes-card {
+    transition: filter 0.3s ease-in-out;
+}
+
+.clothes-card:hover {
+    filter: brightness(0.9);
+}
+
+
+.w-65 {
+    width: 65% !important;
+}
+
+.w-15 {
+    width: 15% !important;
+}
+
+.cart-image {
+    width: 72px !important;
+    height: 72px !important;
+}
+
+.custom-radio:checked {
+    background-color: black !important;
+    border-color: black;
+}
+
+
+/* Responsive */
+@media (max-width: 500px) {
+    .divider {
+        width: 10% !important;
+    }
+
+    .increment {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 4.50%;
+        width: 100%;
+        z-index: 1000;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 998px) {
+    .w-65 {
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 1100px) {
+    .main-content {
+        padding-top: 10%;
+    }
+
+    .other-content {
+        margin-top: 10%;
+    }
+}
