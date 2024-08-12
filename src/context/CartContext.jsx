@@ -14,19 +14,16 @@ export const CartProvider = ({ children }) => {
 
     useEffect(() => {
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        console.log('Cart updated:', cartItems);
     }, [cartItems]);
 
     useEffect(() => {
         localStorage.setItem('email', email);
-        console.log('Email updated:', email);
     }, [email]);
 
     const addItem = (item) => {
         console.log('Adding item to cart:', item);
         setCartItems((prevItems) => {
             const newCartItems = [...prevItems, item];
-            console.log('New cart items:', newCartItems);
             return newCartItems;
         });
     };
@@ -34,7 +31,6 @@ export const CartProvider = ({ children }) => {
     const removeItem = (id) => {
         setCartItems((prevItems) => {
             const updatedCartItems = prevItems.filter(item => item.id !== id);
-            console.log('Item removed, new cart items:', updatedCartItems);
             return updatedCartItems;
         });
     };
