@@ -44,7 +44,6 @@ const ProductsDetail = () => {
                 const query = `{ product(id: "gid://shopify/Product/${id}") { id title description featuredImage { id url } variants(first: 5) { edges { node { id title image { url } price { amount currencyCode } } } } } }`;
                 const request = await fetch(`https://mock.shop/api?query=${encodeURIComponent(query)}`);
                 const response = await request.json();
-                console.log(response);
 
                 if (response.data && response.data.product) {
                     const { title, description, featuredImage, variants } = response.data.product;
@@ -58,7 +57,6 @@ const ProductsDetail = () => {
                     });
 
                     const { size, color } = getSizeAndColor(data[0].title);
-                    console.log(data[0])
                     setSelectedColor(color);
                 } else {
                     console.error('Aucune donnée trouvée dans la réponse');

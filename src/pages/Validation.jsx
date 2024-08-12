@@ -5,7 +5,6 @@ import { useCart } from '../context/CartContext';
 
 const Validation = () => {
     const { email } = useCart();
-    console.log(email)
 
     return (
         <>

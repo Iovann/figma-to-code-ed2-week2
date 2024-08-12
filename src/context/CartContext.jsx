@@ -21,7 +21,6 @@ export const CartProvider = ({ children }) => {
     }, [email]);
 
     const addItem = (item) => {
-        console.log('Adding item to cart:', item);
         setCartItems((prevItems) => {
             const newCartItems = [...prevItems, item];
             return newCartItems;

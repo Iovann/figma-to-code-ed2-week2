@@ -55,7 +55,6 @@ const Home = () => {
 
     const request = await fetch(`https://mock.shop/api?query=${encodeURIComponent(query)}`);
     const response = await request.json();
-    console.log(response)
 
     if (filter === "All") {
       setProducts(response.data.products.edges.map(edge => edge.node));

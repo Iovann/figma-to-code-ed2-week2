@@ -19,7 +19,6 @@ const CartPage = () => {
     const [total, setTotal] = useState(0);
 
     const handleQuantityChange = useCallback((id, quantity) => {
-        console.log(`Updating quantity for item ${id} to ${quantity}`);
         setQuantities(prevQuantities => ({
             ...prevQuantities,
             [id]: quantity
