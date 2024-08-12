@@ -55,7 +55,7 @@ const ClothesCard = ({ product }) => {
                         <img src="/assets/icons/card.svg" className="img-fluid mx-1" alt="card" width={20} height={20} />
                         Add to cart
                     </button>
-                    <button className="btn bg-transparent  d-flex py-2 justify-content-center  text-white fw-semibold border border-1 border-light rounded-pill text-uppercase buy cta-buttons d-none w-50 me-lg-4 me-2">
+                    <button className="btn d-flex py-2 justify-content-center text-white border border-2 fw-bolder btn-bg  rounded-pill text-uppercase cta-buttons d-none w-50 me-lg-4 me-2">
                         BUY NOW
                     </button>
                 </div>

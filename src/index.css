@@ -2,10 +2,16 @@
 @import url('../public/css/archivo.css');
 
 body {
-    font-family: Archivo;
+    font-family: Archivo-Regular;
 }
 
 .navbar-brand {
+    font-family: Chillax-Medium;
+    color: transparent;
+    -webkit-text-stroke: 1px #1D1D1D;
+}
+
+.navbar-brand:hover {
     font-family: Chillax-Medium;
     color: transparent;
     -webkit-text-stroke: 1px #1D1D1D;
@@ -66,7 +72,7 @@ body {
 }
 
 .font-archivo {
-    font-family: Archivo;
+    font-family: Arial;
 }
 
 .btn-light {
@@ -108,9 +114,12 @@ body {
 }
 
 .clothes-card:hover {
-    filter: brightness(0.9);
+    filter: brightness(0.8);
 }
 
+.btn-bg{
+    background-color: #d0cdcd !important;
+}
 
 .w-65 {
     width: 65% !important;
@@ -145,6 +154,20 @@ body {
     .fixed {
         position: fixed;
         top: 4.50%;
+        width: 100%;
+        z-index: 1000;
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 400px) {
+    .fixed {
+        position: fixed;
+        top: 7%;
         width: 100%;
         z-index: 1000;
         justify-content: center;
