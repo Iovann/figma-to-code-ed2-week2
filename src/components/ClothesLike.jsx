@@ -24,7 +24,7 @@ const ClothesLike = ({ variant, title, id }) => {
                         <img src="/assets/icons/card.svg" className="img-fluid mx-1" alt="card" width={20} height={20} />
                         Add to cart
                     </button>
-                    <button className="btn bg-transparent me-2 d-flex justify-content-center text-white fw-semibold border border-1 border-light rounded-pill text-uppercase buy cta-buttons d-none w-50">
+                    <button className="btn bg-transparent me-2 d-flex justify-content-center text-white buy fw-semibold border border-1 border-light rounded-pill text-uppercase buy cta-buttons d-none w-50">
                         BUY NOW
                     </button>
                 </div>

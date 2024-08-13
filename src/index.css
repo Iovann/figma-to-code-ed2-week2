@@ -5,24 +5,19 @@ body {
     font-family: Archivo-Regular;
 }
 
-.navbar-brand {
-    font-family: Chillax-Medium;
-    color: transparent;
-    -webkit-text-stroke: 1px #1D1D1D;
+.navbar-logo {
+    font-family: Chillax-Medium !important;
+    color: transparent !important;
+    -webkit-text-stroke: 1px #1D1D1D !important;
+}
+.pub{
+    position: fixed !important;
+    top: 0;
 }
 
-.navbar-brand:hover {
-    font-family: Chillax-Medium;
-    color: transparent;
-    -webkit-text-stroke: 1px #1D1D1D;
-}
-
-.fixed {
-    position: fixed;
-    top: 3%;
-    width: 100%;
-    z-index: 1000;
-    justify-content: center;
+.bg-black{
+    background-color: #1D1D1D !important;
+    color: white;
 }
 
 .main-content {
@@ -96,8 +91,8 @@ body {
     min-height: 446px;
 }
 
-.buy:hover {
-    background-color: #1D1D1D !important;
+.buy {
+    background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
 .clothes-card:hover .cta-buttons {
@@ -120,6 +115,12 @@ body {
 .btn-bg{
     background-color: #d0cdcd !important;
 }
+
+.add:hover{
+    background-color: #1D1D1D !important;
+    color: white;
+}
+
 
 .w-65 {
     width: 65% !important;
@@ -150,46 +151,17 @@ body {
         width: 15px !important;
         height: 15px !important;
     }
-
-    .fixed {
-        position: fixed;
-        top: 4.50%;
-        width: 100%;
-        z-index: 1000;
-        justify-content: center;
-    }
-
-    .main-content {
-        margin-top: 20%;
-    }
 }
 
 @media (max-width: 400px) {
-    .fixed {
-        position: fixed;
-        top: 7%;
-        width: 100%;
-        z-index: 1000;
-        justify-content: center;
+    .size{
+        font-size: small !important;
     }
-
-    .main-content {
-        margin-top: 20%;
-    }
+    
 }
 
 @media (max-width: 998px) {
     .w-65 {
         width: 40% !important;
-    }
-}
-
-@media (max-width: 1100px) {
-    .main-content {
-        padding-top: 10%;
-    }
-
-    .other-content {
-        margin-top: 10%;
     }
 }

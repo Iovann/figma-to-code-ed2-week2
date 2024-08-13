@@ -18,11 +18,9 @@ function App() {
           <Route path="/cart" element={< CartPage />} />
           <Route path="/payement" element={< CheckOut />} />
           <Route path="/validation" element={< Validation />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </CartProvider>
   )
 }
-
 export default App;

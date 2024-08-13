@@ -161,13 +161,13 @@ const ProductsDetail = () => {
         <>
             <Navbar />
             <section className='container pb-5 pt-3'>
-                <div className="row align-items-center py-5 other-content">
+                <div className="row align-items-center py-5">
                     <div className="col-xl-6">
                         {product && (
                             <img src={product.image} alt="clothes presentation" className='img-fluid rounded-5 w-100' width={579} height={600} />
                         )}
                     </div>
-                    <div className="col-xl-6">
+                    <div className="col-xl-6 pt-4 pt-xl-0">
                         <h2 className='fs-2 fw-bold mb-3 font-chillax'>{title}</h2>
                         {variants.length > 0 && (
                             <h3 className='fw-semibold fs-2 mb-3'>

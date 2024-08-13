@@ -11,7 +11,7 @@ function ShippingMethod() {
     <div className='py-3 container'>
       <h4 className='fw-semibold'>Shipping method</h4>
       <div className="d-flex flex-column gap-2">
-        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping1' ? 'shadow-lg' : ''}`}>
+        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping1' ? 'shadow-sm border-2' : ''}`}>
           <input 
             className="form-check-input mx-2 mt-3 custom-radio" 
             type="radio" 
@@ -32,7 +32,7 @@ function ShippingMethod() {
             </div>
           </label>
         </div>
-        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping2' ? 'shadow-lg' : ''}`}>
+        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping2' ? 'shadow-sm border-2' : ''}`}>
           <input 
             className="form-check-input mx-2 mt-3 custom-radio" 
             type="radio" 
@@ -53,7 +53,7 @@ function ShippingMethod() {
             </div>
           </label>
         </div>
-        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping3' ? 'shadow-lg' : ''}`}>
+        <div className={`form-check border border-1 py-3 rounded-4 ${selectedMethod === 'expressShipping3' ? 'shadow-sm border-2' : ''}`}>
           <input 
             className="form-check-input mx-2 mt-3 custom-radio" 
             type="radio" 

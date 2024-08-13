@@ -92,7 +92,7 @@ function AddressForm() {
       <div className="d-flex mb-3">
         <button
           type="button"
-          className={`btn border border-1 border-secondary-subtle py-3 me-3 w-100 text-start ${paymentMethod === 'card' ? 'shadow-lg' : ''}`}
+          className={`btn  py-3 me-3 w-100 text-start ${paymentMethod === 'card' ? 'shadow-sm border-secondary-subtle border border-1' : ''}`}
           onClick={() => handlePaymentMethodChange('card')}
         >
           <img src="/assets/icons/credit.svg" alt="credit card" width={30} height={30} className="img-fluid" /> <br />
@@ -100,11 +100,11 @@ function AddressForm() {
         </button>
         <button
           type="button"
-          className={`btn border border-1 px-1 px-md-3 border-secondary-subtle py-3 me-3 w-100 text-start ${paymentMethod === 'bank' ? 'shadow-lg' : ''}`}
+          className={`btn px-1 px-md-3  py-3 me-3 w-100 text-start ${paymentMethod === 'bank' ? 'shadow-sm border-secondary-subtle border border-1' : ''}`}
           onClick={() => handlePaymentMethodChange('bank')}
         >
           <img src="/assets/icons/bank.svg" alt="bank transfer" width={30} height={30} className="img-fluid" /> <br />
-          <span className="text-black">{paymentMethod === 'bank' ? 'Account Number' : 'Virtual Account'}</span>
+          <span className="text-black">Virtual Account</span>
         </button>
       </div>
       <div className="row py-2">

@@ -15,11 +15,11 @@ const SizeButton = ({ sizeChoice }) => {
   const sizes = isNumericSize ? ['4', '5', '6', '7', '8'] : ['XS', 'S', 'M', 'L', 'XL'];
 
   return (
-    <div className="d-flex gap-3 gap-sm-2 container">
+    <div className="d-flex gap-3 gap-sm-1 container">
       {sizes.map((size) => (
         <button
           key={size}
-          className={`btn ${mappedSize === size ? 'btn-dark' : 'btn-light'} border border-1 border-black rounded-5 px-sm-4 px-3 fs-3 fw-bold`}
+          className={`btn ${mappedSize === size ? 'btn-dark' : 'btn-light'} border border-1 border-black rounded-5 px-sm-4 px-3 fs-3 size fw-bold`}
         >
           {size}
         </button>

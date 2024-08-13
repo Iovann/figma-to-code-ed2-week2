@@ -8,13 +8,13 @@ const Footer = () => {
                     <div className="container p-4">
                         <div className="row text-white py-5 justify-content-between">
                             <div className="col-lg-5 col-md-9 mb-4 mb-md-0">
-                                <h5 className="text-custom fs-1">BALLAMAS</h5>
+                                <h2 className="text-custom fs-1">BALLAMAS</h2>
                                 <p className='text-white'>
                                     Subscribe to our newsletter  for upcoming products and best discount for all items
                                 </p>
                                 <div className="d-flex justify-content-center">
                                     <input type="email" className='form-control rounded-pill w-75 bg-black text-gray newsletter' placeholder='Your email' />
-                                    <button className='btn btn-light rounded-pill w-25 mx-2 fw-semibold'>Subscribe</button>
+                                    <button className='btn btn-light rounded-pill w-25 mx-2 px-1 px-sm-2 fw-semibold'>Subscribe</button>
                                 </div>
                             </div>
 
@@ -82,7 +82,7 @@ const Footer = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <p className="text-center text-gray pt-5 mb-0">© BALLAMAS 2024 by waris</p>
+                            <p className="text-center text-gray pt-4 mb-0">© BALLAMAS 2024 by waris</p>
                         </div>
                     </div>
                 </footer>

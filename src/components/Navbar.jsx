@@ -13,8 +13,8 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="text-white bg-dark py-2 fixed-top text-center fw-semibold">Sign up and get 20% off for all new arrivals collections</div>
-            <nav className="navbar navbar-expand-xl fixed bg-light">
+            <div className="text-white bg-dark py-2 text-center fw-semibold">Sign up and get 20% off for all new arrivals collections</div>
+            <nav className="navbar navbar-expand-xl">
                 <div className="container d-flex justify-content-center align-items-center d-none d-xl-flex border-bottom border-1 border-secondary-subtle">
                     <ul className="navbar-nav flex-row order-1 order-xl-0 d-none d-xl-flex me-5">
                         <li className="nav-item"><a className="nav-link mx-2" href="#">Men</a></li>
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <li className="nav-item"><a className="nav-link mx-2" href="#">Collection</a></li>
                     </ul>
 
-                    <Link to={"/"} className="navbar-brand mx-auto order-0 fs-1" href="#">BALLAMAS</Link>
+                    <Link to={"/"} className="navbar-brand navbar-logo mx-auto order-0 fs-1" href="#">BALLAMAS</Link>
 
                     <ul className="navbar-nav flex-row order-2 order-xl-0 d-none d-xl-flex ms-5">
                         <li className="nav-item"><a className="nav-link mx-2" href="#">Shop</a></li>
@@ -44,7 +44,7 @@ const Navbar = () => {
                             state ? <span className=""><img src="/assets/icons/hambuger-menu.svg" alt="Menu" width={20} height={20} /></span> : <span className=""><img src="/assets/icons/close.svg" alt="Close" width={20} height={20} /></span>
                         }
                     </button>
-                    <Link to={"/"} className="navbar-brand fs-1" href="#">BALLAMAS</Link>
+                    <Link to={"/"} className="navbar-brand navbar-logo fs-1" href="#">BALLAMAS</Link>
                     <ul className='navbar-bar d-flex gx-3 list-unstyled align-items-center pt-3'>
                         <li className="mav-item mx-2 position-relative">
                             <Link className='nav-link' to={"/cart"}>

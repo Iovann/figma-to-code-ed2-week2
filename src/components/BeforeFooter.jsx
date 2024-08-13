@@ -8,7 +8,7 @@ const BeforeFooter = () => {
                     <div className="d-flex justify-content-center w-100">
                         <button className="btn btn-light rounded-pill text-uppercase my-4 d-flex align-items-center">
                             Learn More
-                            <img src="/assets/icons/arrow.svg" className="img-fluid mx-2" alt="arrow" />
+                            <img src="/assets/icons/arrow.svg" className="img-fluid mx-2" alt="arrow" width={25} height={20}/>
                         </button>
                     </div>
                 </div>

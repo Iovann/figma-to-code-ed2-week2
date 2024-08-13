@@ -50,7 +50,7 @@ const CartPage = () => {
     return (
         <>
             <Navbar />
-            <section className="container py-5 main-content">
+            <section className="container py-5">
                 <div className="row justify-content-center">
                     <div className="col-xl-9">
                         <div className="d-flex justify-content-between">
@@ -69,7 +69,7 @@ const CartPage = () => {
                                     <td className="fw-lighter">Price</td>
                                 </tr>
                                 {cartItems.length == 0 &&
-                                    <p className='text-center fw-bold py-5 fs-5'> Your Cart is empty</p>
+                                    <div className='text-center fw-bold py-5 fs-5'> Your Cart is empty</div>
                                 }
                                 {cartItems.length != 0 &&
                                     cartItems.map(item => (

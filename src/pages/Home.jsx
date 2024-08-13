@@ -76,7 +76,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <section className='container main-content'>
+      <section className='container'>
         <HeroSection />
         <p className="text-center py-4 fw-bolder fs-3 font-chillax">
           Discover the latest trends in summer fashion. Shop now and refresh your wardrobe with our stylish summer shirts.
